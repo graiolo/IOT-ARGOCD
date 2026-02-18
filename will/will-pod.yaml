@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: will-app-dev
+  namespace: dev
+spec:
+  containers:
+  - name: will-app-dev
+    image: wil42/playground:v1
+    ports:
+    - containerPort: 8888

@@ -1,0 +1,14 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: Gateway
+metadata:
+  name: will-gateway-dev
+  namespace: dev
+spec:
+  gatewayClassName: envoy-gateway
+  listeners:
+  - name: http
+    protocol: HTTP
+    port: 8080
+    allowedRoutes:
+      namespaces:
+        from: Same
