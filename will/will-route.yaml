@@ -13,4 +13,4 @@ spec:
         value: /
     backendRefs:
     - name: will-service-dev
-      port: 8080
+      port: 8888
